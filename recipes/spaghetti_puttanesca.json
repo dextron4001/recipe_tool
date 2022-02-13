@@ -1,0 +1,21 @@
+{
+    "name": "spagetti_puttanesca",
+    "ingredients": [
+      {
+        "name": "olive oil",
+        "quant": "3",
+        "unit": "tbsp"
+      },
+      {
+        "name": "onion",
+        "quant": "1",
+        "note": "finely chopped"
+      },
+      {
+        "name": "spaghetti",
+        "quant": "300",
+        "unit": "grams"
+      }
+    ],
+    "rating" : 4.9
+}

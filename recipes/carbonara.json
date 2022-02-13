@@ -1,0 +1,20 @@
+{
+    "name": "pesto pasta",
+    "ingredients": [
+      {
+        "name": "egg",
+        "quant": "1"
+      },
+      {
+        "name": "garlic",
+        "quant": "1",
+        "note": "finely chopped"
+      },
+      {
+        "name": "spaghetti",
+        "quant": "300",
+        "unit": "grams"
+      }
+    ],
+    "rating" : 4.8
+}
