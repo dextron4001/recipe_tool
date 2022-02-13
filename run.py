@@ -68,7 +68,8 @@ def run(input):
 
     print("=========================================================================")
     print("    ")
-    print('With what you have available you can cook these great recipes :')
+    print(f'With what you have available you can cook these great {len(possible_recipes)} recipes :')
+    print("    ")
     possible_recipes = sorted(possible_recipes, key=lambda d: d['rating'], reverse=True) 
     for i in possible_recipes:
         print(f"* {i['name']} ({i['rating']})") # these need to be sorted 
@@ -76,11 +77,11 @@ def run(input):
     print("=========================================================================")
     print("     ")
     print("with a couple of extra items you could also cook up : ")
-
+    print("     ")
 
     recipes_search = sorted(recipes_search, key=lambda d: d['remaining ingredients'])
     other_recipes = []
-    while len(other_recipes) < 3 and len(other_recipes) < len(recipes_search)-1 :
+    while len(other_recipes) < 3 and len(other_recipes) < len(recipes_search) :
         for e,r in enumerate(recipes_search):
             required_ingredients = []
             for i in r['ingredients']:
@@ -91,9 +92,9 @@ def run(input):
 
     for i in other_recipes:
         print(f"* {i['name']} ({i['rating']})")
-        print("you just need:")
+        print("  you just need:")
         for r in i['required_ingredients']:
-            print(f'* {r}')
-        print("-------------")
+            print(f'    * {r}')
+        print('       ')
 
-run(["pesto", "spaghetti", "onion"])
+run(["pesto", "spaghetti", "onion", "olive oil"])

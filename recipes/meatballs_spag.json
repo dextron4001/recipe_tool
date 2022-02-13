@@ -1,12 +1,12 @@
 {
-    "name": "carbonara",
+    "name": "spaghetti meatballs",
     "ingredients": [
       {
-        "name": "egg",
-        "quant": "1"
+        "name": "meatballs",
+        "quant": "8"
       },
       {
-        "name": "garlic",
+        "name": "tomato",
         "quant": "1",
         "note": "finely chopped"
       },

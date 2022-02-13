@@ -1,12 +1,12 @@
 {
-    "name": "carbonara",
+    "name": "cheesey meatballs",
     "ingredients": [
       {
-        "name": "egg",
-        "quant": "1"
+        "name": "meatballs",
+        "quant": "8"
       },
       {
-        "name": "garlic",
+        "name": "cheese",
         "quant": "1",
         "note": "finely chopped"
       },
@@ -16,5 +16,5 @@
         "unit": "grams"
       }
     ],
-    "rating" : 4.8
+    "rating" : 4.6
 }
