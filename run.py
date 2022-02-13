@@ -32,6 +32,7 @@ def run(input):
                 potential_ingredients[str(i["name"])] = recipe_list
             else: 
                 potential_ingredients[str(i["name"])] = [recipe_data(item)]
+            # need to add number of times ingredient appears in recipe to sort inputs
 
     print("=========================================================")
     print("Hello Jad these are the ingredients you can choose from :")
