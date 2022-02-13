@@ -38,7 +38,7 @@ def run(input):
     for key in potential_ingredients.keys():
         print(f"* {key}")
 
-    avialable_ingredients = ["spaghetti", "onion","pesto"] #input()
+    avialable_ingredients = input
     print("-----------------------------------------")
     print("These are the ingredients you chose : ")
     for i in avialable_ingredients:
@@ -96,4 +96,4 @@ def run(input):
             print(f'* {r}')
         print("-------------")
 
-run(["pesto", "spagehetti", "onion"])
+run(["pesto", "spaghetti", "onion"])
