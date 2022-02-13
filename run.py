@@ -80,14 +80,14 @@ def run(input):
 
     recipes_search = sorted(recipes_search, key=lambda d: d['remaining ingredients'])
     other_recipes = []
-    #while len(other_recipes) < 3 or len(other_recipes) < len(recipes_search) :
-    for e,r in enumerate(recipes_search):
-        required_ingredients = []
-        for i in r['ingredients']:
-            if not i['available']:
-                required_ingredients.append(i['name'])
-        r['required_ingredients'] = required_ingredients
-        other_recipes.append(r)
+    while len(other_recipes) < 3 and len(other_recipes) < len(recipes_search)-1 :
+        for e,r in enumerate(recipes_search):
+            required_ingredients = []
+            for i in r['ingredients']:
+                if not i['available']:
+                    required_ingredients.append(i['name'])
+            r['required_ingredients'] = required_ingredients
+            other_recipes.append(r)
 
     for i in other_recipes:
         print(f"* {i['name']} ({i['rating']})")
